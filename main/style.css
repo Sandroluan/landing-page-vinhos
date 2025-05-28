@@ -151,7 +151,7 @@ body {
 }
 
 .cards:hover {
-  transform: scale(1.02);
+  transform: scale(1.01);
 }
 
 .card-title {
@@ -164,6 +164,7 @@ body {
   color: #828282;
 }
 
+/* infos */
 
 #info-container{
   max-width: 75rem;
@@ -212,7 +213,7 @@ body {
 
 #btn-container{
   display: flex;
-  gap: 20px;
+  gap: 1.5rem;
 }
 
 #black-btn{
@@ -246,4 +247,237 @@ body {
 #gray-btn:hover{
   background-color: #000;
   transition: background-color 0.3s ease;
+}
+
+
+/* responsavidade */
+
+/* tablet/notebook */
+@media (max-width: 1024px) {
+
+  /* header */
+  #nav-container {
+    padding: 2rem;
+    gap: 2rem;
+    height: auto; /* Allow height to adjust */
+  }
+
+  #list-menu {
+    margin-right: 2rem;
+    font-size: 1rem;
+    padding: 0.8rem;
+    gap: 1rem;
+  }
+
+  #btn-nav {
+    margin-right: 0.8rem;
+  }
+
+  #brand-logo a {
+    margin: 1rem;
+    font-size: 1.8rem;
+  }
+
+  /* hero */
+  #presentation-container {
+    padding: 2.5rem 1.5rem;
+  }
+
+  #title {
+    font-size: 3.5rem;
+  }
+
+  #presentation-text {
+    font-size: 1.1rem;
+  }
+
+  #img-presentation {
+    margin: 1rem 2rem;
+    height: 30rem; 
+  }
+
+  /* section */
+  #sections-container {
+    margin: 8rem auto;
+    padding: 0 1.5rem;
+  }
+
+  #section-title {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+  }
+
+  #cards-container {
+    gap: 1.5rem;
+  }
+
+  .cards {
+    width: 45%; 
+  }
+
+  .cards-img {
+    height: 350px; 
+  }
+
+  /* info */
+
+  #info-container {
+    margin: 8rem auto;
+    padding: 0 1.5rem;
+    flex-direction: column; 
+    align-items: center; 
+  }
+
+  #info-side-side {
+    flex-direction: column; 
+    gap: 20px;
+    width: 100%; 
+    align-items: center; 
+    text-align: center; 
+  }
+
+  #info-title {
+    font-size: 2.5rem;
+  }
+
+  .info-sub {
+    font-size: 1.3rem;
+  }
+
+  .info-text {
+    font-size: 1.3rem;
+  }
+
+  #picnic-img {
+    width: 100%; 
+    display: flex; 
+    justify-content: center; 
+  }
+
+  #picnic-img img {
+    margin-left: 0;
+    margin-top: 2.5rem;
+    border-radius: 8px;
+    max-width: 90%;
+    height: auto;
+  }
+
+  #btn-container {
+    flex-direction: column; 
+    gap: 15px;
+    width: 100%; 
+  }
+
+  #black-btn,
+  #gray-btn {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+  }
+}
+
+/* celular */
+
+/* header */
+@media (max-width: 768px) {
+  #nav-container {
+    padding: 1.5rem;
+    flex-direction: column; 
+    height: auto;
+    align-items: flex-start; 
+    gap: 1rem;
+  }
+
+  #list-menu {
+    margin-right: 0;
+    padding: 0;
+    flex-direction: column; 
+    gap: 0.8rem;
+    width: 100%; 
+    align-items: flex-start; 
+  }
+
+  #btn-nav {
+    margin-right: 0;
+    width: 100%; 
+    text-align: center; 
+    padding: 0.6rem;
+  }
+
+  #brand-logo a {
+    margin: 0; 
+    font-size: 1.6rem;
+  }
+
+
+/* hero */
+  #presentation-container {
+    padding: 2rem 1rem;
+  }
+
+  #title {
+    font-size: 2.5rem;
+  }
+
+  #presentation-text {
+    font-size: 1rem;
+  }
+
+  #presentation-btn {
+    font-size: 1.1rem;
+    padding: 1rem 1.5rem;
+    width: 100%; 
+  }
+
+  #img-presentation {
+    margin: 1rem auto;
+    width: 100%;
+    height: auto; 
+  }
+
+  /* sections */
+
+  #sections-container {
+    margin: 5rem auto;
+    padding: 0 1rem;
+  }
+
+  #section-title {
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    text-align: center; 
+  }
+
+  #cards-container {
+    flex-direction: column; 
+    gap: 1.5rem;
+  }
+
+  .cards {
+    width: 100%; 
+  }
+
+  .cards-img {
+    height: 300px; 
+  }
+
+  /* info */
+  #info-container {
+    margin: 5rem auto;
+    padding: 0 1rem;
+  }
+
+  #info-title {
+    font-size: 2rem;
+  }
+
+  .info-sub,
+  .info-text {
+    font-size: 1.1rem;
+  }
+
+  #picnic-img img {
+    margin-top: 2rem;
+    max-width: 100%; 
+  }
 }
