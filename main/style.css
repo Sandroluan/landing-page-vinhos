@@ -184,7 +184,6 @@ body {
 }
 
 #info-title{
-  margin-top: 3rem;
   font-size: 3rem;
   font-weight: 300;
 }
@@ -204,7 +203,8 @@ body {
 }
 
 #picnic-img img {
-  margin-left: 5.44rem;
+  margin-top: 1.4rem;
+  margin-left: 7.74rem;
   max-width: 100%;
   height: auto;
   border-radius: 8px 0 0 8px;
