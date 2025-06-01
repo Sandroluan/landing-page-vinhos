@@ -22,8 +22,6 @@ Tudo isso em uma navegação fluida e intuitiva.
 
 ## 🚀 Funcionalidades
 
-- **Header Fixo e Dinâmico**  
-  A barra de navegação permanece fixa no topo e altera sua cor conforme a rolagem da página para melhor legibilidade.
 
 - **Design Responsivo**  
   Interface adaptável a diferentes tamanhos de tela com 3 principais breakpoints:
