@@ -77,8 +77,8 @@ body {
 
 #presentation-container {
   max-width: 75rem;
-  margin: 0 auto;
-  padding: 3.15rem 2rem;
+  margin:0 auto;
+  padding:  15rem 2rem 10rem 2rem;
 }
 
 #title {
@@ -376,43 +376,287 @@ body {
   }
 }
 
-/* celular */
+/* reviews-sections */
+#review-title{
+  margin-bottom: 5rem;
+  font-size: 2.5rem;
+  font-weight: 300;
+  margin-left: 6rem;
+  text-transform: capitalize;
 
-/* header */
+}
+#reviews-container{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.costumer-img{
+  height: 4rem;
+  width: 4rem;
+  border-radius: 50%;
+}
+.review-box{
+  width: 30%;
+  margin: auto;
+  border: 1px solid black;
+  padding: 3rem;
+  height: 50vh;
+  border-radius: 2rem;
+}
+.review-content{
+  margin-bottom: 1rem;
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+.review-title{
+  margin-bottom: 3rem;
+  font-size: 1.4rem;
+  font-weight: 300;
+}
+.costumer-name{
+  margin-right: 1rem;
+  text-transform: capitalize;
+  font-size: 1.2rem;
+  font-weight: 300;
+}
+.review-text{
+  font-size: 1rem;
+  font-weight: 200;
+}
+
+/* footer */
+#footer-container {
+  margin-top: 10rem;
+  background-color: #f1f1f1;
+  padding: 2.5rem 1.25rem;
+  display: flex;
+  justify-content: space-around;
+  gap: 1.25rem;
+  align-items: center;
+}
+#social-icons{
+  justify-content: center;
+  font-size: 1.3rem;
+  display: flex;
+  gap: 20px;
+  color: #454545;
+}
+#list-container{
+  align-items: center;
+  display: flex;
+  justify-content: space-between;
+  gap: 2.5rem;
+}
+
+#footer-container h4 {
+  flex-basis: 100%;
+  font-size: 1.3rem;
+  margin-bottom: 1.5rem;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: #000;
+}
+
+#footer-container ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  flex: 1 1 150px;
+}
+
+#footer-container ul li {
+  margin-bottom: 10px;
+}
+
+#footer-container ul li a {
+  color: #454545;
+  text-decoration: none;
+  transition: color 0.3s;
+  font-size: 14px;
+}
+
+#footer-container ul li a:hover {
+  color: #000;
+}
+
+
+
+/* responsividade */
+
+/* tablet/notebook */
+@media (max-width: 1024px) {
+  /* header */
+  #nav-container {
+    padding: 2rem;
+    gap: 2rem;
+    height: auto;
+  }
+
+  #list-menu {
+    margin-right: 2rem;
+    font-size: 1rem;
+    padding: 0.8rem;
+    gap: 1rem;
+  }
+
+  #btn-nav {
+    margin-right: 0.8rem;
+  }
+
+  #brand-logo a {
+    margin: 1rem;
+    font-size: 1.8rem;
+  }
+
+  /* hero */
+  #presentation-container {
+    padding: 10rem 1.5rem 5rem 1.5rem;
+  }
+
+  #title {
+    font-size: 3.5rem;
+  }
+
+  #presentation-text {
+    font-size: 1.1rem;
+  }
+
+  #img-presentation {
+    margin: 1rem 2rem;
+    height: 30rem;
+  }
+
+  /* sections/cards */
+  #sections-container {
+    margin: 8rem auto;
+    padding: 0 1.5rem;
+  }
+
+  #section-title {
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+  }
+
+  #cards-container {
+    gap: 1.5rem;
+  }
+
+  .cards {
+    width: 45%;
+  }
+
+  .cards-img {
+    height: 350px;
+  }
+
+  /* infos */
+  #info-container {
+    margin: 8rem auto;
+    padding: 0 1.5rem;
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #info-side-side {
+    flex-direction: column;
+    gap: 20px;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+  }
+
+  #info-title {
+    font-size: 2.5rem;
+  }
+
+  .info-sub {
+    font-size: 1.3rem;
+  }
+
+  .info-text {
+    font-size: 1.3rem;
+  }
+
+  #picnic-img {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+  }
+
+  #picnic-img img {
+    margin-left: 0;
+    margin-top: 2.5rem;
+    border-radius: 8px;
+    max-width: 90%;
+  }
+
+  #btn-container {
+    flex-direction: column;
+    gap: 15px;
+    width: 100%;
+  }
+
+  #black-btn,
+  #gray-btn {
+    width: 100%;
+    padding: 1rem;
+    font-size: 1rem;
+  }
+
+  /* reviews-sections */
+  #review-title {
+    margin-left: 2rem;
+  }
+
+  .review-box {
+    width: 45%;
+    height: auto;
+    padding: 2.5rem;
+  }
+
+  #reviews-container {
+    gap: 1.5rem;
+    justify-content: center;
+    flex-wrap: wrap;
+  }
+}
+
+/* celular */
 @media (max-width: 768px) {
+  /* header */
   #nav-container {
     padding: 1.5rem;
-    flex-direction: column; 
-    height: auto;
-    align-items: flex-start; 
+    flex-direction: column;
+    align-items: flex-start;
     gap: 1rem;
   }
 
   #list-menu {
     margin-right: 0;
     padding: 0;
-    flex-direction: column; 
+    flex-direction: column;
     gap: 0.8rem;
-    width: 100%; 
-    align-items: flex-start; 
+    width: 100%;
+    align-items: flex-start;
   }
 
   #btn-nav {
     margin-right: 0;
-    width: 100%; 
-    text-align: center; 
-    padding: 0.6rem;
+    width: 100%;
+    text-align: center;
+    padding: 0.8rem;
   }
 
   #brand-logo a {
-    margin: 0; 
+    margin: 0;
     font-size: 1.6rem;
   }
 
-
-/* hero */
+  /* hero */
   #presentation-container {
-    padding: 2rem 1rem;
+    padding: 9rem 1rem 4rem 1rem;
   }
 
   #title {
@@ -426,17 +670,16 @@ body {
   #presentation-btn {
     font-size: 1.1rem;
     padding: 1rem 1.5rem;
-    width: 100%; 
+    width: 100%;
   }
 
   #img-presentation {
     margin: 1rem auto;
     width: 100%;
-    height: auto; 
+    height: auto;
   }
 
-  /* sections */
-
+  /* sections/cards */
   #sections-container {
     margin: 5rem auto;
     padding: 0 1rem;
@@ -445,39 +688,77 @@ body {
   #section-title {
     font-size: 2rem;
     margin-bottom: 2rem;
-    text-align: center; 
+    text-align: center;
   }
 
   #cards-container {
-    flex-direction: column; 
-    gap: 1.5rem;
+    flex-direction: column;
+    gap: 2.5rem;
   }
 
   .cards {
-    width: 100%; 
+    width: 100%;
   }
 
   .cards-img {
-    height: 300px; 
+    height: 300px;
   }
 
-  /* info */
+  /* infos */
   #info-container {
     margin: 5rem auto;
     padding: 0 1rem;
   }
 
-  #info-title {
-    font-size: 2rem;
+  #picnic-img img {
+    margin-top: 2rem;
+    max-width: 100%;
   }
 
-  .info-sub,
-  .info-text {
+  /* reviews-sections */
+  #review-title {
+    font-size: 1.8rem;
+    margin-left: 1rem;
+    text-align: center;
+  }
+
+  #reviews-container {
+    flex-direction: column;
+    align-items: center;
+    gap: 2rem;
+  }
+
+  .review-box {
+    width: 90%;
+    padding: 2rem;
+  }
+
+  /* footer */
+  #footer-container {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 2rem 1rem;
+    gap: 2rem;
+  }
+
+  #list-container {
+    flex-direction: column;
+    gap: 1.5rem;
+    align-items: flex-start;
+  }
+
+  #social-icons {
+    justify-content: flex-start;
+  }
+
+  #footer-container h4 {
     font-size: 1.1rem;
   }
 
-  #picnic-img img {
-    margin-top: 2rem;
-    max-width: 100%; 
+  #footer-container ul li a {
+    font-size: 14px;
   }
 }
+
+/* celular (telas menores) */
+@media (max-width: 480px) {
