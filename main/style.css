@@ -483,6 +483,7 @@ body {
 
 
 
+
 /* responsividade */
 
 /* tablet/notebook */
@@ -759,6 +760,3 @@ body {
     font-size: 14px;
   }
 }
-
-/* celular (telas menores) */
-@media (max-width: 480px) {
